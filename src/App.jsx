@@ -3,6 +3,8 @@ import Resources from "./components/Resources";
 import ResourceDetail from "./components/ResourceDetail";
 import MainLayout from "./components/MainLayout";
 import Contact from "./components/Contact"; // Import Contact component
+import Media from "./pages/Media";
+import Announcements from "./pages/Announcements";
 
 function App() {
   return (
@@ -30,6 +32,24 @@ function App() {
           element={
             <MainLayout>
               <Contact />
+            </MainLayout>
+          }
+        />
+        {/* New route for Media page */}
+        <Route
+          path="/media"
+          element={
+            <MainLayout>
+              <Media />
+            </MainLayout>
+          }
+        />
+        {/* New route for Announcements page */}
+        <Route
+          path="/announcements"
+          element={
+            <MainLayout>
+              <Announcements />
             </MainLayout>
           }
         />

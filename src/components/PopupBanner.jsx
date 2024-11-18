@@ -1,5 +1,6 @@
 // components/PopupBanner.js
 import React from "react";
+import a1 from "../assets/Announcements/a1.jpg";
 
 const PopupBanner = ({ onClose }) => {
   const handleClickOutside = (e) => {
@@ -23,7 +24,9 @@ const PopupBanner = ({ onClose }) => {
         <p className="text-lg">
           This is a banner message to show important information or promotions.
         </p>
-        {/* Additional content here if needed */}
+        <div>
+          <img src={a1} alt="" />
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,9 @@ const MainLayout = ({ children }) => {
   // Hide Hero on specific routes (resource detail or contact page)
   const hideHero =
     location.pathname.startsWith("/resource/") ||
-    location.pathname === "/contact";
+    location.pathname === "/contact" ||
+    location.pathname === "/media" ||
+    location.pathname === "/announcements";
 
   return (
     <>
