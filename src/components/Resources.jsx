@@ -184,7 +184,7 @@ const Resources = () => {
   };
 
   return (
-    <section className="py-16 bg-slate-200">
+    <section className="py-16 bg-slate-200 md:mt-1 mt-[-600px]">
       <div className="w-4/5 m-auto">
         <div className="mb-16">
           <h1 className="text-3xl font-semibold font-Quicksand">News/Blogs</h1>

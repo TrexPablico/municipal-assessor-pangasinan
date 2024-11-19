@@ -12,7 +12,8 @@ const MainLayout = ({ children }) => {
     location.pathname.startsWith("/resource/") ||
     location.pathname === "/contact" ||
     location.pathname === "/media" ||
-    location.pathname === "/announcements";
+    location.pathname === "/announcements" ||
+    location.pathname === "/about";
 
   return (
     <>

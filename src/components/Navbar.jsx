@@ -104,10 +104,16 @@ const Navbar = () => {
         {/* Logo */}
         <div className="w-1/3 flex justify-center items-center">
           <img src={logo} alt="logo" className="h-[70px]" />
+          <div className="px-3 hidden md:flex">
+            <h1>
+              Municipal Assessor <br />{" "}
+              <span className="text-2xl">Aguilar Pangasinan</span>
+            </h1>
+          </div>
         </div>
 
         {/* Navigation links */}
-        <div className="w-1/3 justify-center items-center gap-6 font-bold hidden md:flex">
+        <div className="w-1/3 justify-center items-center gap-6 font-bold hidden lg:flex">
           <Link to="/" className="hover:text-blue-600 transition duration-300">
             Home
           </Link>
@@ -123,7 +129,10 @@ const Navbar = () => {
           >
             Media Gallery
           </Link>
-          <Link to="/" className="hover:text-blue-600 transition duration-300">
+          <Link
+            to="/about"
+            className="hover:text-blue-600 transition duration-300"
+          >
             About Us
           </Link>
           <Link

@@ -5,6 +5,7 @@ import MainLayout from "./components/MainLayout";
 import Contact from "./components/Contact"; // Import Contact component
 import Media from "./pages/Media";
 import Announcements from "./pages/Announcements";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -50,6 +51,15 @@ function App() {
           element={
             <MainLayout>
               <Announcements />
+            </MainLayout>
+          }
+        />
+        {/* New route for About Us page */}
+        <Route
+          path="/about"
+          element={
+            <MainLayout>
+              <About />
             </MainLayout>
           }
         />

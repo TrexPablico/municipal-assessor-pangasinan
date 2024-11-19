@@ -57,27 +57,28 @@ const Contact = () => {
           Send us a Message <img src={message} alt="" className="ml-2 w-9" />
         </h3>
         <p className="max-w-md leading-relaxed">
-          We’d love to hear from you! Whether you're interested in our
-          construction services or looking to start an exciting career in the
-          construction industry, we invite you to reach out.
+          We’re here to serve you! Whether you need assistance with property
+          assessments, zoning information, or tax inquiries, our dedicated team
+          is ready to help.
           <br />
           <br />
-          For potential clients, let us help turn your vision into reality with
-          our expert construction solutions. Share your project details with us,
-          send us a message.
+          For property owners, let us provide clarity and guidance to ensure
+          your assessments are accurate and fair. Share your questions or
+          concerns with us—your satisfaction is our priority.
         </p>
+
         <ul className="space-y-5 mt-5">
           <li className="flex items-center">
             <img src={email} alt="" className="w-6 mr-2" />
-            zurkonstrack@gmail.com
+            assessoremailsample@gmail.com
           </li>
           <li className="flex items-center">
             <img src={phone} alt="" className="w-6 mr-2" />
-            +63 09178414443/09178351359
+            0915 688 5768
           </li>
           <li className="flex items-center">
             <img src={location} alt="" className="w-6 mr-2" />
-            96 Amsterdam st Capitol Homes, brgy Matandang Balara Quezon City
+            Pangasinan Assessors office address
           </li>
         </ul>
       </div>
