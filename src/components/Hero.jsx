@@ -1,7 +1,7 @@
 import React from "react";
-import p2 from "../assets/Hero/hero4.jpg";
-import p1 from "../assets/Hero/herobg.jpg";
-import p3 from "../assets/Hero/hero5.jpg";
+import p2 from "../assets/Hero/hero4.png";
+import p1 from "../assets/Hero/herobg.png";
+import p3 from "../assets/Hero/hero5.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

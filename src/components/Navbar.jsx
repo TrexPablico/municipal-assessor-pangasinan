@@ -42,8 +42,7 @@ const Navbar = () => {
       setTime(`${philippineDate} - ${philippineTime}`);
     }, 1000);
 
-    const isDismissed = localStorage.getItem("bannerDismissed");
-    if (isDismissed) setBannerVisible(false);
+    setBannerVisible(true);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -74,7 +73,7 @@ const Navbar = () => {
           onClick={handleClose} // Close banner on clicking outside
         >
           <div
-            className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4 relative"
+            className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4 relative text-center justify-center"
             onClick={(e) => e.stopPropagation()} // Prevent close on clicking inside the banner
           >
             <button
@@ -84,7 +83,9 @@ const Navbar = () => {
               X
             </button>
             <h2 className="text-lg font-bold mb-4">Announcements!</h2>
-            <p className="text-black mb-4"></p>
+            <p className="mb-4 text-red-600 text-3xl font-bold">
+              List of Delinquent Owners
+            </p>
             <Slider {...sliderSettings}>
               {images.map((image, index) => (
                 <div key={index} className="flex justify-center">
@@ -100,7 +101,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between items-center lg:ml-[150px] md:ml-[110px]">
         {/* Logo */}
         <div className="w-1/3 flex justify-center items-center">
           <img src={logo} alt="logo" className="h-[70px]" />
@@ -144,7 +145,7 @@ const Navbar = () => {
         </div>
 
         {/* Philippine Date and Time */}
-        <div className="w-1/3 text-center text-[11px]">
+        <div className="w-1/3 text-center text-[11px] lg:mr-0 mr-11">
           Philippine Standard Time:
           <br />
           {time}
@@ -154,25 +155,82 @@ const Navbar = () => {
         {dropdown ? (
           <div
             onClick={showDropdown}
-            className="lg:hidden md:hidden text-[22px] cursor-pointer text-black mr-5"
+            className="lg:hidden text-[22px] cursor-pointer text-black mr-5"
           >
-            <MdClose />
+            <MdClose className="text-white" />
           </div>
         ) : (
           <div
             onClick={showDropdown}
-            className="lg:hidden md:hidden text-[22px] cursor-pointer text-black mr-5"
+            className="lg:hidden text-[22px] cursor-pointer text-black mr-5"
           >
-            <HiMenuAlt3 />
+            <HiMenuAlt3 className="text-white" />
           </div>
         )}
       </div>
 
       <div
-        className={`lg:hidden w-full fixed top-24 bg-gray transition-all duration-300 ${
+        className={`lg:hidden fixed top-24 left-0 bg-white w-full z-40 shadow-lg transition-all duration-300 ${
           dropdown ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
-      ></div>
+      >
+        <ul className="flex flex-col gap-4 py-6 px-4 text-black">
+          <li>
+            <Link
+              to="/"
+              className="block text-center text-lg font-semibold hover:text-blue-600 transition duration-300"
+              onClick={() => setDropdown(false)} // Close dropdown on click
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/announcements"
+              className="block text-center text-lg font-semibold hover:text-blue-600 transition duration-300"
+              onClick={() => setDropdown(false)}
+            >
+              Announcements
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/media"
+              className="block text-center text-lg font-semibold hover:text-blue-600 transition duration-300"
+              onClick={() => setDropdown(false)}
+            >
+              Media Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blogs"
+              className="block text-center text-lg font-semibold hover:text-blue-600 transition duration-300"
+              onClick={() => setDropdown(false)}
+            >
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="block text-center text-lg font-semibold hover:text-blue-600 transition duration-300"
+              onClick={() => setDropdown(false)}
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="block text-center text-lg font-semibold hover:text-blue-600 transition duration-300"
+              onClick={() => setDropdown(false)}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };

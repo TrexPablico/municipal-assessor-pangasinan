@@ -6,6 +6,7 @@ import Contact from "./components/Contact"; // Import Contact component
 import Media from "./pages/Media";
 import Announcements from "./pages/Announcements";
 import About from "./pages/About";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -60,6 +61,15 @@ function App() {
           element={
             <MainLayout>
               <About />
+            </MainLayout>
+          }
+        />
+        {/* New route for Blogs page */}
+        <Route
+          path="/blogs"
+          element={
+            <MainLayout>
+              <Blogs />
             </MainLayout>
           }
         />

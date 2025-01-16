@@ -85,7 +85,7 @@ const Contact = () => {
 
       <div className="md:w-1/2 mt-8 md:mt-0">
         <form ref={form} onSubmit={sendEmail} className="space-y-5">
-          <label className="block">Your Name</label>
+          <label className="block font-semibold">Your Name</label>
           <input
             type="text"
             name="user_name"
@@ -93,7 +93,7 @@ const Contact = () => {
             required
             className="w-full bg-indigo-100 p-4 rounded focus:outline-none"
           />
-          <label className="block">Your Email</label>
+          <label className="block font-semibold">Your Email</label>
           <input
             type="email"
             name="user_email"
@@ -101,7 +101,7 @@ const Contact = () => {
             required
             className="w-full bg-indigo-100 p-4 rounded focus:outline-none"
           />
-          <label className="block">Your Message here</label>
+          <label className="block font-semibold">Your Message here</label>
           <textarea
             name="message"
             rows="6"

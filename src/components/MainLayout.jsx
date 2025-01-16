@@ -13,7 +13,8 @@ const MainLayout = ({ children }) => {
     location.pathname === "/contact" ||
     location.pathname === "/media" ||
     location.pathname === "/announcements" ||
-    location.pathname === "/about";
+    location.pathname === "/about" ||
+    location.pathname === "/blogs";
 
   return (
     <>

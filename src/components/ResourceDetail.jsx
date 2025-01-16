@@ -243,7 +243,7 @@ const ResourceDetail = () => {
         className="player-wrapper mx-4 mt-20 flex object-center justify-center"
       />
 
-      <div className="w-89% m-auto max-w-[1400px] bg-gray-400 p-8 rounded-lg shadow-md mt-40">
+      <div className="w-89% m-auto max-w-[1400px] bg-gray-400 p-8 rounded-lg shadow-md mt-40 mb-11">
         <h2 className="2xl mb-6 font-semibold">{resource.opener}</h2>
         <div className="mb-4 last:mb-0">
           <button

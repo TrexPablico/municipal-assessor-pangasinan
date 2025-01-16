@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaBook } from "react-icons/fa";
 import cover1 from "../assets/Resources/Capture1.JPG";
@@ -21,7 +21,7 @@ import cover17 from "../assets/Resources/Capture17.JPG";
 import cover18 from "../assets/Resources/Capture18.JPG";
 import cover19 from "../assets/Resources/Capture19.JPG";
 
-const Resources = () => {
+const Blogs = () => {
   const navigate = useNavigate();
 
   const resource = [
@@ -38,7 +38,7 @@ const Resources = () => {
       cover: cover2,
       title: "Monthly Meeting",
       description:
-        "DILG Aguilar field office, MLGOO Norberto L. Macaraeg Jr.   &   16 Barangay Secretaries",
+        "DILG Aguilar field office, MLGOO Norberto L. Macaraeg Jr. & 16 Barangay Secretaries",
       date: "February 9, 2024",
     },
     {
@@ -47,14 +47,14 @@ const Resources = () => {
       title: "Tax Mapping Activity",
       description:
         "Office of the Municipal Assessor Tax Mapping Activity (Nov 30 - Dec 7)",
-      date: "December 11,2023",
+      date: "December 11, 2023",
     },
     {
       id: 4,
       cover: cover4,
       title: "Right Of Way",
       description:
-        "Isa sa pinaka interesanting paksa ukol sa lupa ay ang RIGHT OF WAY. Sa ipapakitang AVP ay malalaman ang piling detalye na makakaatulong sa pag-intindi ng probisyon na nakasaad sa batas.",
+        "Isa sa pinaka interesanting paksa ukol sa lupa ay ang RIGHT OF WAY. Sa ipapakitang AVP ay malalaman ang piling detalye na makakatulong sa pag-intindi ng probisyon na nakasaad sa batas.",
       date: "October 21, 2022",
     },
     {
@@ -95,7 +95,7 @@ const Resources = () => {
       title:
         "Municipal Newly Elected Officials (MNEO): Creating roadmap for LGU development.",
       description:
-        "MNEO - a continuing capacity development program of the DILG that aims to prepare newly-elected officials of the local government in taking up their tasks and responsibilities as political leaders and area development managers thus to translate their vision and agenda for their LGUs into a feasible plan making their LGUs a globally and regionally competitive institutions. The NEO is designed as term-based learning process. ELA - It is the term-based plan culled out from the Comprehensive Development Plan which contains the major development thrusts and priorities of both the executive and the legislative branches for the three year term of office.",
+        "MNEO - a continuing capacity development program of the DILG that aims to prepare newly-elected officials of the local government in taking up their tasks and responsibilities as political leaders and area development managers thus to translate their vision and agenda for their LGUs into a feasible plan making their LGUs a globally and regionally competitive institutions.",
       date: "August 7, 2022",
     },
     {
@@ -112,95 +112,89 @@ const Resources = () => {
       title: "Google Classroom",
       description:
         "Google Classroom is an educational platform that simplifies assignment management, communication, and collaboration between teachers and students.",
+      date: "July 30, 2022",
     },
     {
-      id: 11,
+      id: 12,
       cover: cover12,
       title: "How to correct clerical errors in tax declaration",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
+        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions.",
       date: "July 24, 2022",
     },
     {
-      id: 11,
+      id: 13,
       cover: cover13,
-      title: "How to correct clerical errors in tax declaration",
+      title: "Understanding Encumbrances",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
-      date: "July 24, 2022",
+        "Explaining the different types of encumbrances and how they affect property ownership and transactions.",
+      date: "July 15, 2022",
     },
     {
-      id: 11,
+      id: 14,
       cover: cover14,
-      title: "How to correct clerical errors in tax declaration",
+      title: "Real Property Tax Payment Guidelines",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
-      date: "July 24, 2022",
+        "Step-by-step guide on how to properly pay real property taxes in your locality.",
+      date: "July 10, 2022",
     },
     {
-      id: 11,
+      id: 15,
       cover: cover15,
-      title: "How to correct clerical errors in tax declaration",
+      title: "Title Transfer Process",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
-      date: "July 24, 2022",
+        "An overview of the title transfer process and its required documents.",
+      date: "July 5, 2022",
     },
     {
-      id: 11,
+      id: 16,
       cover: cover16,
-      title: "How to correct clerical errors in tax declaration",
+      title: "Common Land Disputes and Their Resolutions",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
-      date: "July 24, 2022",
+        "Insights into common land disputes and how to address them legally.",
+      date: "June 30, 2022",
     },
     {
-      id: 11,
+      id: 17,
       cover: cover17,
-      title: "How to correct clerical errors in tax declaration",
+      title: "Municipal Land Survey Updates",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
-      date: "July 24, 2022",
+        "Updates on ongoing and completed land surveys within the municipality.",
+      date: "June 25, 2022",
     },
     {
-      id: 11,
+      id: 18,
       cover: cover18,
-      title: "How to correct clerical errors in tax declaration",
+      title: "Land Registration Simplified",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
-      date: "July 24, 2022",
+        "Breaking down the land registration process for new landowners.",
+      date: "June 20, 2022",
     },
     {
-      id: 11,
+      id: 19,
       cover: cover19,
       title: "How to correct clerical errors in tax declaration",
       description:
-        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions",
+        "Sometimes, an outright denial of an application is all one needs so as to realize the folly of one’s actions.",
       date: "July 24, 2022",
     },
   ];
-
-  const [visibleCount, setVisibleCount] = useState(3); // Number of items to display initially
-
-  const handleLoadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 3); // Increment by 3
-  };
 
   const handleCardClick = (id) => {
     navigate(`/resource/${id}`);
   };
 
   return (
-    <section className="py-16 bg-slate-200 md:mt-1 lg:mt-[-300px] mt-[-600px]">
+    <section className="py-16 bg-slate-200 md:mt-1 lg:mt-0 mt-0">
       <div className="w-4/5 m-auto">
         <div className="mb-16">
           <h1 className="text-3xl font-semibold font-Quicksand">News/Blogs</h1>
           <span className="text-sm mt-2 block">
-            Stay updated with the latest news and blogs from the Aguilar,
-            Pangasinan Assessor's Office.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {resource.slice(0, visibleCount).map((item) => (
+          {resource.map((item) => (
             <div
               key={item.id}
               className="box rounded-lg shadow-shadow1 bg-white cursor-pointer"
@@ -231,19 +225,9 @@ const Resources = () => {
             </div>
           ))}
         </div>
-        {visibleCount < resource.length && ( // Show button only if there are more items to load
-          <div className="text-center mt-8">
-            <button
-              onClick={handleLoadMore}
-              className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-300"
-            >
-              Load More
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );
 };
 
-export default Resources;
+export default Blogs;

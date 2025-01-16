@@ -1,4 +1,5 @@
 import React from "react";
+import aboutimg from "../assets/About/about.jpg";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         {/* Image Section */}
         <div className="flex justify-center">
           <img
-            src="https://via.placeholder.com/400"
+            src={aboutimg}
             alt="About Us"
             className="rounded-lg shadow-lg w-full max-w-sm md:max-w-full"
           />
