@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Footer from "./Footer";
+import Ordinance from "./Ordinance";
 
 const MainLayout = ({ children }) => {
   const location = useLocation();
@@ -19,7 +20,7 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      {!hideHero && <Hero />}
+      {!hideHero && [<Hero />, <Ordinance />]}
       {children}
       <Footer />
     </>

@@ -10,10 +10,8 @@ const resources = {
     title2:
       "Tax Mapping Activities, collaborative efforts by & beyween NIA Region 1 &  Assessor Aguilar",
     title3: "Discover more by watching this video.",
-    description2:
-      "Marq is the new name for Lucidpress, rebranded to better reflect its evolving capabilities as a brand templating platform. The core functionalities remain the same, but the rebranding to Marq emphasizes a broader scope in helping businesses maintain brand integrity while empowering teams to create content quickly and easily.",
-    description:
-      "A design and brand templating platform that allows users to create and manage marketing materials, brochures, flyers and social media graphics.",
+    description2: "",
+    description: "",
 
     //video: "../assets/ResourceDetails/video1.mp4",
     embedCode: `<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F100064709975156%2Fvideos%2F412133091407708%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>`,
