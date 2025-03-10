@@ -59,25 +59,25 @@ const Ordinance = () => {
     dots: false,
     infinite: true,
     speed: 2000,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
   };
 
   return (
-    <div className="bg-gray-200 flex flex-col md:flex-row items-center p-5">
+    <div className="bg-gray-200 flex flex-col md:flex-row items-center p-5 lg:mt-1 mt-[-600px]">
       <div className="md:mb-0 mb-5 text-center md:text-left flex-1 md:mr-5 mx-7 ml-20">
-        <h1 className="text-red-500 text-2xl lg:text-5xl ">
+        <h1 className="text-red-500 text-md lg:text-5xl font-bold">
           Provincial Ordinance granting TAX AMNESTY on delinquent real property
           taxes
         </h1>
-        <p className="text-black mt-5 lg:text-3xl">
+        <p className="text-black mt-5 lg:text-3xl text-md">
           Pangasinan provincial ordinance granting tax amnesty on interest in
           relation to real property tax
         </p>
       </div>
-      <div className="flex justify-center items-center flex-1">
+      <div className="flex justify-center items-center flex-1 ">
         <div className="w-full max-w-screen-md">
           <Slider {...settings} className="w-full">
             {images.map((image, index) => (
@@ -85,7 +85,7 @@ const Ordinance = () => {
                 <img
                   src={image}
                   alt={`Ordinance ${index + 1}`}
-                  className="object-cover w-full cursor-pointer"
+                  className="object-cover lg:w-full cursor-pointer h-[300px] w-[300px]"
                   onClick={() => openModal(image)}
                 />
               </div>

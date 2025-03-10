@@ -73,7 +73,7 @@ const Navbar = () => {
           onClick={handleClose} // Close banner on clicking outside
         >
           <div
-            className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-4 relative text-center justify-center"
+            className="bg-white p-6 md:p-6 p-4 rounded-lg shadow-lg max-w-md w-full mx-4 relative text-center justify-center md:ml-0 ml-4"
             onClick={(e) => e.stopPropagation()} // Prevent close on clicking inside the banner
           >
             <button
@@ -82,8 +82,10 @@ const Navbar = () => {
             >
               X
             </button>
-            <h2 className="text-lg font-bold mb-4">Announcements!</h2>
-            <p className="mb-4 text-red-600 text-3xl font-bold">
+            <h2 className="text-lg md:text-lg text-md font-bold mb-4">
+              Announcements!
+            </h2>
+            <p className="mb-4 text-red-600 text-3xl md:text-3xl text-xl font-bold">
               List of Delinquent Owners
             </p>
             <Slider {...sliderSettings}>

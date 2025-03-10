@@ -74,7 +74,6 @@ const Contact = () => {
           </li>
           <li className="flex items-center">
             <img src={phone} alt="" className="w-6 mr-2" />
-            0915 688 5768
           </li>
           <li className="flex items-center">
             <img src={location} alt="" className="w-6 mr-2" />
