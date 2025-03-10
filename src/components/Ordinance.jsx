@@ -85,7 +85,7 @@ const Ordinance = () => {
                 <img
                   src={image}
                   alt={`Ordinance ${index + 1}`}
-                  className="object-cover lg:w-full cursor-pointer h-[300px] w-[300px]"
+                  className="object-cover lg:w-full cursor-pointer lg:h-full h-[300px] w-[300px]"
                   onClick={() => openModal(image)}
                 />
               </div>
